@@ -3,20 +3,17 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Landing from './components/landing'
+import App from './App.vue'
 
-/* eslint-disable no-new */
-const routes = [
-  { path: '/', component: Landing }
-];
+Vue.use(VueRouter);
+const router = new VueRouter({
+    routes: [
+      { path: '/', component: Landing }
+    ]
+});
 
+const app = new Vue(Vue.util.extend({
+  router,
+}, App)).$mount("#app");
 
-
-new Vue({
-  router: new VueRouter({
-    routes
-  }),
-  components: { Landing }
-}).$mount('#app');
-
-
-
+export { app, router }
