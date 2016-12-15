@@ -4,9 +4,9 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './routes'
 
-
 const app = new Vue(Vue.util.extend({
   router,
 }, App)).$mount("#app");
 
-export { app, router }
+
+// export { app, router }
