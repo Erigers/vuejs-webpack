@@ -3,6 +3,6 @@
       <router-view></router-view>
     </div>
 </template>
-<style type="sass">
+<style type="scss">
   @import '../static/sass/app.scss';
 </style>

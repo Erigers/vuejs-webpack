@@ -10,7 +10,7 @@ module.exports = {
   ],
   // add your custom rules here
   'rules': {
-    // allow debugger during development
+    // allow debugger during dev
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
   }
 }
