@@ -5,7 +5,7 @@
   "author": "erigers <erigersmamoci@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "gulp && node build/dev-server.js",
+    "dev": "node build/dev-server.js && gulp watch",
     "build": "gulp && node build/build.js",
     "unit": "karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
@@ -13,7 +13,9 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
   "dependencies": {
+    "gulp": "^3.9.1",
     "gulp-vuemaker": "^1.0.1",
+    "gulp-watch": "^4.3.11",
     "vue": "^2.1.0",
     "vue-router": "^2.1.1"
   },

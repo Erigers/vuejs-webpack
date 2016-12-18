@@ -6,3 +6,7 @@ gulp.task('default', function() {
     .pipe(vuemaker())
     .pipe(gulp.dest('./src'));
 });
+
+gulp.task('watch', function(){
+  gulp.watch('./src/dev/**/*.+(js|css|html)', ['default']);
+});
