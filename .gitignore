@@ -8,3 +8,5 @@ selenium-debug.log
 .idea
 src/templates/
 src/components/
+src/App.vue
+static/css/app.css
